@@ -1,0 +1,13 @@
+#pound sign for notes
+#print is a function that will display the value inside 
+#string is an ordered sequence of characters (str) ("Hello", 'Sam', "2000")
+#integers are whole numbers (int) (1, 2, 3, 4, 5)
+#floating point is a number with decimal point (float) (2.5, 3.5, 1.23)
+#list is an ordered sequence of objects (list) (10, "hello", 200.3) ##Lists are MUTABLE (able to be changed)
+#Dictionaries unorderd key value pairs (dict) ("mykey": "value", "name": "Frankie")
+#Tuples ordered immutable sequence of objects (tup) (10, "hello", 200.3) #CANNOT be changed
+#Sets unodered collection of unique objects (set) ("a","b")
+#Booleans logical value indicating True or False (bool)
+#strings are the only one that needs '' or "" integers and floats do not need them
+
+
