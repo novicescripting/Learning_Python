@@ -1,0 +1,371 @@
+#pound sign for notes
+#print is a function (print 'hello \n world' - this will create a new line between hello and world - another option is the use \t for tab
+#string is an ordered sequence of characters (str) ("Hello", 'Sam', "2000")
+#integers are whole numbers (int) (1, 2, 3, 4, 5)
+#floating point is a number with decimal point (float) (2.5, 3.5, 1.23)
+#Numbers are either integers or floatins points
+#list is an ordered sequence of objects (list) (10, "hello", 200.3) ##Lists are MUTABLE (able to be changed)
+#Dictionaries unorderd key value pairs (dict) ("mykey": "value", "name": "Frankie")
+#Tuples ordered immutable sequence of objects (tup) (10, "hello", 200.3)
+#Sets undered collection of unique objects (set) ("a","b")
+#Booleans logical value indicating True or False (bool)
+#strings are the only one that needs '' or "" integers and floats do not need them
+#Tuples are basically lists that are immutable and use ()
+#Sets are unordered collection of unique elements - cant have a in a set more than once or 1 more than once or whatever you choose to define your element as
+
+#Common functions 
+#print('this will be printed')
+#len('hello') this will say 5 because there are 5 characters in the word hello
+
+
+#Python follows PEMDAS rules 
+2+1 #Will add numbers  
+2-1 #Will subtract number
+2/2 #Will divide numbers
+2*2 #Will multiply numbers
+7%4 #Will divide and show the remainder this operation is call modulo or mod
+5%2 #Run this to see if 5 is even or odd if it spits out anything other than 0 it is odd
+2**2 #This is exponents 2 to the power of 2
+100 ** 0.5 #This will display the square root of 100
+10 ** 2 #This will square 10 
+
+#This section is for types
+a = 3 #a is the variable and it is equal to 3
+type(a) #Shows what type the variable is in this case it is int because it is a whole number
+
+#This section is for variables
+#my_income, tax_rate, and my_taxes are variables - variables can be added, divided, subtracted, or multiplied - below is an example of this
+my_income = 100
+tax_rate = 0.1
+my_taxes = my_income * tax_rate
+
+#This section is for strings
+#Strings are not mutable! (meaning you can't use indexing to change individual elements of a string)
+#A process called indexing [] is when your code grabs a single character from the string - below is an example
+my_test_string_1 = 'Hello World' #The variable is my_test_string_1 and it is equal to 'Hello World'
+my_test_string_1[0] #This will show the letter H - it is the first character in the string
+my_test_string_1[-1] #This is called reverse indexing - this will display the last character in our string
+character_name = 'david'
+character_lastname = 'teddy'
+character_name + character_lastname #This will print out David teddy - this is called concatination
+character_name.upper() #This will make david to - DAVID - vice versa if you use character_name.lower it will do david
+x = 'Hello World'
+x.split() # This will appear at ['Hello' , 'World']
+#Slicing grabs multiple characters in the string - example below
+my_test_string_2 = 'abcdefghijk' #The variable my_test_string_2 is equal to abcdefghijk
+my_test_string_2[2:] #This will grab from C to the end
+my_test_string_2[:3] #This will grab the letters abc - 3 characters from the beginning of the string
+my_test_string_2[3:6] # This will grab the letters def - grab from the thrid character which is D and stop at F
+#Step size is by how you are counting your numbers - example below
+my_test_string_2[::2] #This will show acegik - it is counting every 2 characters
+my_test_string_2[2:7:2] #This will show ceg - starts at the index of character 2 then go up to the 7th character but dont included it and use a step size of 2
+my_test_string_2[::-1] #This reverses the string it will be kjihgfedcba
+#Formatting with .format() method
+print ('this is a string{}'.format('INSERTED')) #This will display - this is a string INSERTED
+print ('The {} {} {}'.format('fox','brown','quick')) #This will display - The fox brown quick
+print ('The {2} {1} {0}'.format('fox','brown','quick')) #This will display - The quick brown fox
+print ('The {q} {b} {f}'.format(f='fox',b='brown',q='quick')) #This will display - The quick brown fox
+result = 100/777 #This is defining a variable
+#Float formatting using .format() "{value:width.precisionf}"
+print ("The result was {r}".format(r=result)) #this will display - The result was 0.1287001287001287
+print ("the result was {r:1.3f}".format(r=result)) #This will display - The result was 0.129
+#Formated String Literals - example below
+name = 'john'
+print (f'Hello, his name is {name}') #This will display - Hello, his name is John
+
+#This section is for lists - lists can use indexing and slicing just like strings as well as other common options such as length and concatination
+my_list = [1,2,3] #The variable is my_list and inside is a list of numbers [1,2,3]
+len(my_list) #This will display 3 - there are three items in this list
+my_list[0] #this will display the first item in the list - it will be 1
+#lists are mutable - you can change items in the list - example below
+#lists has objects that can be retrieved by location 
+my_list_1 = ['one','two','three']
+my_list_1[0] = '1' #This will change one to 1
+my_list_1.append('four') #This will display one, two, three, four
+my_list_1.pop() #This will pop off the last item in the list - in this case it will be four - the variable will now display one, two, three
+my_list_1.pop(1) #This will pop off the item two in the list - it is the in the 1st character spot
+my_list_2 = ['a','e','x','b','c']
+sorted(my_list_2) #When this is ran it will sort them items in the list in alphabetical order 
+my_list_2.reverse() #This will reverse the items in the list
+
+#This section is for dictionaries
+#Dictionaries can have strings, floats, integers, lists and dictionaries
+#Dictionary objects are retrieved by key names - can not be sorted
+my_dict = {'key1':'value1','key2':'value2'}
+my_dict #This will display {'key1':'value1','key2':'value2'}
+my_dict['key1'] #This will display 'value1'
+prices_lookup = {'apple':'2.99','orange':'1.99','milk':'5.80'}
+prices_lookup['apple'] #This will return 2.99
+d = {'k1':'123','k2':[0,1,2,3]}
+d['k2'][2] #This wil show 2 because from the dictionary k2 = 0,1,2 - the index postion of 2 is 2 just like the index position of 1 would be 1 
+c = {'k1': ['a','b','c']}
+c #this will display {'k1': ['a','b','c']}
+c['k1'][2].upper() #This will display C
+c['k2'] = 300 #This will add a key called k2 - it is equal to 300 - can do c['k1'] = random - this will overwrite the old value of k1
+prices_lookup.keys() #This will dispaly all the keys of this list - apple, orange, milk
+prices_lookup.value() #This will display all of the values of this dictionary - 2.99, 1.99, and 5.80
+prices_lookup.items() #This will display all of the pairings of this dictionary - ([('apple', 2.99), ('orange', 1.99), ('milk', 5.80)])
+
+#This section is over Tuples
+#The reason for using tuples is to insure data integrity - that way reassignment will not happen
+#Tuples are very similar to lists but can not be changed - immutable (not mutatable)
+#With tuples once an element is inside a tuple it can not be reassigned - cant move strings or numbers or floats around
+#Tuples use parenthesis (1,2,3)
+t = (1,2,3)
+mylist11 - [1,2,3]
+type(t) #This will display that t is a tuple
+type(mylist11) #Will display that mylist11 is a list
+len(t) #Will display 3 
+t1 = ('one',2,2.3)
+t1[0] #This will display one - it is in the index place of 0
+t3 = ('a','a','a','b')
+t3.count('a') #This will display 3 - there are 3 a's in the tuple
+t3.index('a') #This will show the first time that a is found in the tuple and what index positon it is in
+
+#This section is about sets
+myset = set() #This is how your create a set
+myset.add(1) #This will display {1} the number 1 was added to the set
+myset.add(1) #This will display {1} it will not display {1, 1} - can only have unique elements in a set
+mlist = [1,2,3,3,3,3,3,4]
+set(mlist) #This will display {1, 2, 3, 4}
+
+#This section is about booleans
+True #This is a boolean
+False #This is a boolean
+type(False) #This will display bool for booleans
+1 > 2 #This will return False - 1 is not greater than 2
+1 == 1 #This will display True - 1 is equal to 1
+g = None #This is helpful to just put a null value on the variable g so that no errors are thrown - useful if you will define the variable later
+
+
+#This section has to do with I\O (input \ output) with basic .txt files
+myfile = open('testing1.txt')
+myfile.read() #This will read off whats inside the text file
+myfile.seek(0) #This will be able to read the file again - its like watching a VHS tape you have to rewind it before you can watch it again - with myfile.seek(0) it "rewinds" the file to the beginning
+myfile.readlines() #This will display whats inside the text file but with eachline having a break in it
+#To choose the path of the file you are wanting to open view the example below
+myfile = open("C:\\Users\\UserName\\Folder\\test.txt")
+#For mac and linux do the same but switch the \\ to /
+myfile.close() #Once you open a file in python you need to close it in python
+with open('testing1.txt') as my_new_file:
+	contents = my_new_file.read() #With this we no longer have to run the myfile.close() command
+#This section is about writing/reading to a file
+with open('testing1.txt',mode='r') as testing1: #This is for READING a file
+	contents = testing1.read() #This is for reading a file and rewinding it afterwards
+with open('testing1.txt',mode='w') as testing1: #This is for OVERwriting a file or creating a new file
+with open('testing1.txt',mode='a') as testing1: #This is for APPENDING to a file
+with open('testing1.txt',mode='r+') as testing1: #This is for READING/WRITING a file
+with open('testing1.txt',mode='w+') as testing1: #This is for OVERWRITING/READING a file - also creates a new file	
+with open('abcdef.txt',mode='w') as testing2: #This will create a file named abcdef.txt and write the string below into it 
+	f.write('This is in my new abcdef.txt file')
+with open('abcdef.txt',mode='r') as testing2:
+	print(testing2.read()) #This will display 'This is my new abcdef.txt file'
+
+#This section is over comparison operators
+#!=  ##If value of two opperations are not equal then the condition becomes true
+#== ##If the vaule of two opperations are equal then the conditon becomes true ##1==1 = true 
+#> ##If the vaule of the left opperation or equation is greater than the right it will display True
+#< ##Opposite of above
+#>= ##Greater than or equal to
+#<= ##Less than or equal to
+
+#This section is over logical operators and some examples
+#and ##Both operations need to be true else it will display false
+#or ##Only one operation needs to be true
+#not ##Will display the opposite of the boolean
+1 < 2 and 2 < 3 #This will display True
+1 == 1 or 2 == 2 #This will display True
+1 == 2 or 2 == 2 #This will still display true because on of the opertions is true
+1 == 1 or 2 == 3 #This will display false because neither operation is true
+not 1 == 1 #This will display False because we want the opposite of what is displayed
+
+#This section is over if, elif, else statments
+if 1 == 1:
+	print('Hello World') #since 1 is equal to 1 Hello world will be printed out
+#Here we will add the else statement to our code
+if 1 == 1:
+	print('Hello World')
+else:
+	print('BEEP BEEP BEEP')
+#Here we will add the elif statment
+if 2 != 3:
+	print('yes thats true')
+elif 0 > 1:
+	print('Nope')
+else:
+	print('not sure')
+
+#This section is over for loops
+mylist12 = [1,2,3,4,5,6,7,8,9,10]
+for num in mylist12:
+	print(num) #This will print out mylist12
+for nm in mylist12:
+	print(nm) #this will print out mylist12
+
+
+for num in mylist12:
+	#Check for even
+	if num % 2 == 0:
+		print(num)
+	else:
+		print(f'Odd Number: {num}')
+	#This will print: 
+	#Odd Number: 1
+	#2
+	#Odd Number: 3 and so on
+
+list_sum = 0
+for num in mylist12:
+	list_sum = list_sum + num
+print(list_sum) #55 Will be printed out
+
+list_sum = 0
+for num in mylist12:
+	list_sum = list_sum + num
+	print(list_sum) #This will print out
+	#1
+	#3
+	#6
+	#10
+	#15
+	#21
+	#And so on
+
+#This section is over while loops
+x = 0
+
+while x < 5:
+	print(f'The current value of x is {x}')
+	x = x + 1 #This is the same as x += 1
+else:
+	print("X is not less than 5")
+#The current value of x is 0
+#The current value of x is 1
+#The current value of x is 2
+#The current value of x is 3
+#The current value of x is 4
+#X is not less than 5
+
+#Common statments within loops:
+#Break: Breaks out of the current closest enclosing loop
+#Continue: Goes to the top of the closest enclosing loop
+#Pass: Does nothing at all
+x = [1,2,3]
+for item in x:
+	pass
+print('end of the script')#This will print end of script - this is done when you just want a placeholder and dont want any errors in your code
+
+randostring = 'Sammy'
+for letter in randostring:
+	if letter == 'a':
+		continue
+	print(letter)
+#This will run through and print every letter in the string sammy - but once the letter a is encounted it will skip it
+#S
+#m
+#m
+#y
+
+ randostring = 'Sammy'
+for letter in randostring:
+	if letter == 'a':
+		break
+	print(letter) #Once the letter 'a' is encountered in the string it will break out of the loop causing it to only print out S
+#S
+
+x = 5 
+while x < 5:
+	
+	if x == 2:
+		break
+	print(x)
+	x += 1
+	#This will only print out 0,1 
+
+	##Some additional operators
+	#Range
+	mylist = [1,2,3]
+	for num in range(10):
+		print(num)# This will print:
+	#1
+	#2
+	#3
+	#4
+	#5
+	#6
+	#7
+	#8
+	#9
+	#It will not include 10
+	mylist = [1,2,3]
+	for num in range(3,10):
+		print(num)# This will print:
+#3
+#4
+#5
+#6
+#7
+#8
+#9
+#It will start at 3 and go up to 9 and not included 10
+
+mylist = [1,2,3]
+	for num in range(0,10,2):
+		print(num)# This will print:
+#0
+#2
+#4
+#6
+#8
+#This will start at 0 and go up to 9 not including 10 with a step size of 2
+
+#enumerate
+word = 'abcde'
+for index,letter in enumerate(word):
+	print(index)
+	print(letter)
+	print('\n')
+#This will print out:
+#0
+#a
+
+#1
+#b
+
+#2
+#c
+
+#3
+#d
+
+#4
+#e
+
+#ZIP
+mylist1 = [1,2,3]
+mylist2 = ['a','b','c']
+for item in zip(mylist1,mylist2):
+	print(item)
+#(1, 'a')
+#(2, 'b')
+#(3, 'c')
+list(zip(mylist1,mylist2))
+#[(1, 'a'), (2, 'b'),(3, 'c')]
+mylist = [10,20,30,40,100]
+min(mylist) #This will display 10 because it is the minimum value in that list
+max(mylist) #This list display 100 becaue it is the maximum value in that list
+
+#Random library 
+from random import shuffle
+mylist = [1,2,3,4,5]
+shuffle(mylist)
+mylist #This will have been shuffled from its original state to a random order 
+from random import randint
+randint(0,100)#This will return a random integer from 0 to 100
+
+#USER INPUT
+input('Enter a number here: ') #This will display Enter a number here and it are able to type in a number - whatever number you type in it will spit it back out at you
+result = input('What is your name: ') #This will ask to user what thier name is and it will be stored in a variable called result which can be latter called on
+result #This will display whatever the user inputed 
+input('What is your age: ')
+result = int(input('what is your age: ')) #by default the user input is a string you need to specify if you want it to be anything else - in this case we want it to be an integer
