@@ -18,7 +18,7 @@ len(my_list) #This will display 3 - there are 3 items in my_list
 my_list[0:] #This is called slicing - this will display c, d, and b 
 my_list[:2] #This will display a, c, and d
 my_list[0:2] #This will display a, c, and d - This will start at the index postion of 0 and display the characters until the index position of 2
-#Lets redfine our list again
+#Lets redefine our list again
 my_list = ['a','b','c','d','e','f','g','h','i','j','k']
 my_list[::2] #This is step size - this will display every two characters in this case it will be a, c, e, g, i, and k
 my_list[2:7:2] #This will show c, e, and g - This starts at the second index position the goes up to but does not include the seventh position with a step size of 2
