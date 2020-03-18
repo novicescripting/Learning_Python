@@ -1,3 +1,24 @@
 #This section is about strings
 #Strings are not mutable 
-#Strings can use indexing [] 
+#Strings can use indexing [] as well as concatination
+my_string_1 = 'Hello World'
+my_string_2 = 'How are you'
+my_string_1 + my_string_2 #This will display 'Hello World How are you'
+my_string_1.upper() #This will display HELLO WORLD
+my_string_1.lower() #This will display hello world
+my_string_1.split() #This is display [Hello' , 'World']
+
+#This section is about using the .format() method with strings
+print('this is my test string{}'.format('What do you think')) #This will display this is my test string What do you think
+print('The {} {} {}'.format('quick','brown','fox')) #This will display The quick, brown, fox
+print('The {q} {b} {f}'.format(q='quick',b='brown',f='fox')) #This will display The quick brown fox
+
+#This section is about formated string literals
+#Lets define a variable with the value of john
+name = 'john'
+print(f'Hello, his name is {name}') #This will display Hello, his name is john
+
+##I will be adding more about strings at a later date
+#Happy coding!
+
+
