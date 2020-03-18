@@ -1,0 +1,16 @@
+#This section is about Dictionaries
+#Dictionaries can have strings, floats, integers, lists, and other dictionaries within them
+#Dictionaries are retrieved by key names 
+#Dictionaries can not be sorted
+
+#Lets define a dictionary
+my_dict = {'key1:'value1','key2':'value2'} #Notice that we use curly brackets to define a dictionary
+my_dict['key1'] #This will display value1
+#Lets define another dictionary
+item_prices = {'apple':'$1.00','bread':'$3.99','milk':$5.00'}
+item_prices['apple'] #This will display $1.00
+
+
+##I will add more to this at a later time
+#Happy coding!
+
