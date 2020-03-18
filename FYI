@@ -11,3 +11,14 @@
 #strings are the only one that needs '' or "" integers and floats do not need them
 
 
+#Python follows PEMDAS rules 
+2+1 #Will add numbers  
+2-1 #Will subtract number
+2/2 #Will divide numbers
+2*2 #Will multiply numbers
+7%4 #Will divide and show the remainder this operation is call modulo or mod
+5%2 #Run this to see if 5 is even or odd if it spits out anything other than 0 it is odd
+2**2 #This is exponents 2 to the power of 2
+100 ** 0.5 #This will display the square root of 100
+10 ** 2 #This will square 10 
+
